@@ -243,7 +243,23 @@ button:hover {
 	padding-bottom: 25px;
 }
 
-.card:last-child, .card:nth-last-child(2) {
+@media only screen and (max-width: 768px){
+	.cards {
+		flex-flow: column nowrap;
+	}
+
+	.card {
+		flex-basis: 100%;
+	}
+}
+
+@media only screen and (min-width: 769px){
+	.card:nth-last-child(2){
+		margin-bottom: 0;
+	}
+}
+
+.card:last-child {
 	margin-bottom: 0;
 }
 
